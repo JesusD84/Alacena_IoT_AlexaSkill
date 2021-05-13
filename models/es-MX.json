@@ -1,0 +1,287 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mi alacena",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "Cancelalo",
+            "Olvidalo"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "Que puedo hacer",
+            "Que puedo decir",
+            "Que digo"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "Adios",
+            "Nada",
+            "Ya nada",
+            "Ya nada gracias"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "MoverEstantes",
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "direc",
+              "type": "direccionAccion"
+            },
+            {
+              "name": "direccion",
+              "type": "direccion"
+            }
+          ],
+          "samples": [
+            "Muevete a {numero} repisas",
+            "Mueve a {numero} repisas",
+            "Muevete {numero} repisas",
+            "Mueve a {numero} estantes",
+            "Muevete a {numero} estantes",
+            "Mueve {numero} repisas",
+            "Muevete {numero} estantes",
+            "Mueve {numero} estantes",
+            "Mueve {numero} estantes para {direccion}",
+            "Mueve {numero} repisas para {direccion}",
+            "Muevete a {numero} estantes para {direccion}",
+            "Muevete a {numero} repisas para {direccion}",
+            "Mueve a {numero} repisas para {direccion}",
+            "Muevete {numero} repisas para {direccion}",
+            "Mueve a {numero} estantes para {direccion}",
+            "Muevete a {numero} repisas hacia {direccion}",
+            "Mueve a {numero} repisas hacia {direccion}",
+            "{direc} {numero} repisas",
+            "Muevete {numero} repisas hacia {direccion}",
+            "Mueve a {numero} estantes hacia {direccion}",
+            "Muevete a {numero} estantes hacia {direccion}",
+            "Mueve {numero} repisas hacia {direccion}",
+            "Muevete {numero} estantes hacia {direccion}",
+            "{direc} {numero} estantes",
+            "Mueve {numero} estantes hacia {direccion}"
+          ]
+        },
+        {
+          "name": "ListarProductos",
+          "slots": [],
+          "samples": [
+            "Dame una lista de todos los productos de mi alacena",
+            "Dame una lista de todos los productos",
+            "Dame una lista de los productos de mi alacena",
+            "Dame una lista de los productos",
+            "Listame todos los productos de mi alacena",
+            "Listame todos los productos",
+            "Hazme un recuento de mi alacena",
+            "Cuantos productos tengo",
+            "Cuantos productos tengo en mi alacena",
+            "Que productos tengo",
+            "Que productos tengo en mi alacena"
+          ]
+        },
+        {
+          "name": "EncontrarProducto",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            }
+          ],
+          "samples": [
+            "Traeme unas {producto}",
+            "Traeme unos {producto}",
+            "Traeme las {producto}",
+            "Traeme los {producto}",
+            "Dame las {producto}",
+            "Dame los {producto}",
+            "Dame unas {producto}",
+            "Dame unos {producto}",
+            "Pasame las {producto}",
+            "Pasame los {producto}",
+            "Pasame unas {producto}",
+            "Pasame unos {producto}",
+            "Traeme un poco de {producto}",
+            "Traeme algo de {producto}",
+            "Traeme una {producto}",
+            "Traeme un {producto}",
+            "Traeme la {producto}",
+            "Traeme el {producto}",
+            "Dame un poco de {producto}",
+            "Dame algo de  {producto}",
+            "Dame una {producto}",
+            "Dame un  {producto}",
+            "Dame la {producto}",
+            "Dame el {producto}",
+            "Pasame un poco de {producto}",
+            "Pasame algo de {producto}",
+            "Pasame una {producto}",
+            "Pasame un {producto}",
+            "Pasame la {producto}",
+            "Pasame el {producto}"
+          ]
+        },
+        {
+          "name": "SacarProducto",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            }
+          ],
+          "samples": [
+            "Saca las {producto} de la alacena",
+            "Saca los {producto} de la alacena",
+            "Saca la {producto} de la alacena",
+            "Saca el {producto} de la alacena",
+            "Quita las {producto} de la alacena",
+            "Quita los {producto} de la alacena",
+            "Quita la {producto} de la alacena",
+            "Quita el {producto} de la alacena",
+            "Elimina las {producto} de la alacena",
+            "Elimina los {producto} de la alacena",
+            "Elimina la {producto} de la alacena",
+            "Elimina el {producto} de la alacena",
+            "Ya no hay {producto} en la alacena",
+            "Ya no hay {producto} en mi alacena",
+            "Ya no hay {producto}",
+            "Se terminaron las {producto}",
+            "Se terminaron los {producto}",
+            "Se termino la {producto}",
+            "Se termino el {producto}",
+            "Se acabaron las {producto}",
+            "Se acabaron los {producto}",
+            "Se acabo la {producto}",
+            "Se acabo el {producto}",
+            "Saca las {producto} de mi alacena",
+            "Saca las {producto}",
+            "Saca los {producto} de mi alacena",
+            "Saca los {producto}",
+            "Saca la {producto} de mi alacena",
+            "Saca la {producto}",
+            "Saca el  {producto} de mi alacena",
+            "Saca el {producto}",
+            "Quita las {producto} de mi alacena",
+            "Quita las {producto}",
+            "Quita los {producto} de mi alacena",
+            "Quita los {producto}",
+            "Quita la {producto} de mi alacena",
+            "Quita la {producto}",
+            "Quita el {producto}",
+            "Quita el {producto} de mi alacena",
+            "Elimina las {producto} de mi alacena",
+            "Elimina las {producto}",
+            "Elimina los {producto} de mi alacena",
+            "Elimina los {producto}",
+            "Elimina la {producto} de mi alacena",
+            "Elimina la {producto}",
+            "Elimina el {producto} de mi alacena",
+            "Elimina el {producto}"
+          ]
+        },
+        {
+          "name": "GuardarProducto",
+          "slots": [
+            {
+              "name": "producto",
+              "type": "AMAZON.Food"
+            }
+          ],
+          "samples": [
+            "Guarda las {producto}",
+            "Guarda las {producto} en la alacena",
+            "Guarda las {producto} en mi alacena",
+            "Guarda los {producto}",
+            "Guarda los {producto} en la alacena",
+            "Guarda los {producto} en mi alacena",
+            "Guarda la {producto}",
+            "Guarda la {producto} en la alacena",
+            "Guarda la {producto} en mi alacena",
+            "Guarda el {producto}",
+            "Guarda el {producto} en la alacena",
+            "Guarda el {producto} en mi alacena",
+            "Guardame las {producto}",
+            "Guardame las {producto} en la alacena",
+            "Guardame las {producto} en mi alacena",
+            "Guardame los {producto}",
+            "Guardame los {producto} en la alacena",
+            "Guardame los {producto} en mi alacena",
+            "Guardame la {producto}",
+            "Guardame la {producto} en la alacena",
+            "Guardame la {producto} en mi alacena",
+            "Guardame el {producto}",
+            "Guardame el {producto} en la alacena",
+            "Guardame el {producto} en mi alacena"
+          ]
+        },
+        {
+          "name": "CalibrarAlacena",
+          "slots": [
+            {
+              "name": "numero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Estoy en el estante {numero}",
+            "Estoy en el estante numero {numero}",
+            "Estoy en la repisa {numero}",
+            "Estoy en la repisa numero {numero}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "1",
+              "name": {
+                "value": "Retrocede"
+              }
+            },
+            {
+              "id": "0",
+              "name": {
+                "value": "Avanza"
+              }
+            }
+          ],
+          "name": "direccionAccion"
+        },
+        {
+          "values": [
+            {
+              "id": "1",
+              "name": {
+                "value": "atras"
+              }
+            },
+            {
+              "id": "0",
+              "name": {
+                "value": "adelante",
+                "synonyms": [
+                  "delante"
+                ]
+              }
+            }
+          ],
+          "name": "direccion"
+        }
+      ]
+    }
+  },
+  "version": "15"
+}
